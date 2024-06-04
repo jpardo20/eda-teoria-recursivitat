@@ -8,7 +8,7 @@ public class CercaDicotomica {
     public static void main (String [] args) {
         int element;
         int pos;
-        int [] elVector = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90};
+        int[] elVector = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90};
         
         System.out.println("\nCerca DICOT�MICA");
         System.out.println("----------------\n");
@@ -28,7 +28,7 @@ public class CercaDicotomica {
 
     }
 
-    private static int cercaDicotomica (int v[], int element,
+    private static int cercaDicotomica (int vector[], int element,
                                         int primer, int darrer) {
 
         int centre;
@@ -38,13 +38,13 @@ public class CercaDicotomica {
 
         centre = (primer+darrer)/2;
 
-        if (v[centre] == element)
+        if (vector[centre] == element)
             return centre;
 
-        if (v[centre]<element)
-            return cercaDicotomica(v, element, centre+1, darrer); // dreta
+        if (vector[centre]<element)
+            return cercaDicotomica(vector, element, centre+1, darrer); // dreta
         else
-            return cercaDicotomica(v, element, primer, centre-1); // esquerra
+            return cercaDicotomica(vector, element, primer, centre-1); // esquerra
 
     }
 

@@ -1,8 +1,5 @@
 package eines;
 
-import classes.Criatura;
-import classes.MainaderiaList;
-
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,32 +40,6 @@ public class EinesJoan {
     }
 
 
-    public static void mostraVectorCriatura(Criatura[] vectorCriatures, String nomVector){
-        String cadenaTitol = "\tContingut de " + nomVector;
-        System.out.println(cadenaTitol);
-        for (int i = 0; i < vectorCriatures.length; i++) {
-            System.out.format("Nom: %s\t%sEdat: %d\tSexe: %d.\n",
-                    vectorCriatures[i].getNom(),
-                    (vectorCriatures[i].getNom().length()<7)?"\t":"",
-                    vectorCriatures[i].getEdat(),
-                    vectorCriatures[i].getSexe());
-
-        }
-        System.out.println("\t"+ liniaDecoracio);
-    }
-
-    public static void mostraMainaderiaList(MainaderiaList collecioRebuda, String nomColleccio){
-        String cadenaTitol = "\tContingut de " + nomColleccio;
-        System.out.println(cadenaTitol);
-        for (int i = 0; i < collecioRebuda.quantitatDeCriatures(); i++) {
-            System.out.format("Nom: %s\t%sEdat: %d\tSexe: %d.\n",
-                    collecioRebuda.get(i).getNom(),
-                    (collecioRebuda.get(i).getNom().length()<7)?"\t":"",
-                    collecioRebuda.get(i).getEdat(),
-                    collecioRebuda.get(i).getSexe());
-        }
-        System.out.println("\t"+ liniaDecoracio);
-    }
 
     public static void mostraLinkedListCriatures(LinkedList collecioRebuda, String nomColleccio){
         String cadenaTitol = "\tContingut de " + nomColleccio;

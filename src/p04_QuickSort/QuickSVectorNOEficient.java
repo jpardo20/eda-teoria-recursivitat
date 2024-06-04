@@ -9,7 +9,7 @@ public class QuickSVectorNOEficient {
     	// l'ordena i comprova que l'ordenació és correcta
         Random random = new Random();
 
-        int [] elVector = new int[2000];
+        int[] elVector = new int[2000];
         for (int i=0; i<elVector.length; i++)
             elVector[i] = random.nextInt(10000000);
 
@@ -26,9 +26,9 @@ public class QuickSVectorNOEficient {
 
     }
 
-    private static void QuickSort (int [] vector, int mida) {
+    private static void QuickSort (int[] vector, int mida) {
         int pivot, indexPetit, indexGran, index;
-        int [] mesPetits, mesGrans;
+        int[] mesPetits, mesGrans;
 
         if (mida<=1) return; // amb un o cap element, ja està ordenat
 
@@ -59,10 +59,10 @@ public class QuickSVectorNOEficient {
         for (int i=0; i<indexGran; i++) {vector[index]=mesGrans[i]; index++;}
     }
 
-    private static void swap (int [] v, int i, int j) {
-        int aux = v[i];
-        v[i] = v[j];
-        v[j] = aux;
+    private static void swap (int[] vector, int i, int j) {
+        int aux = vector[i];
+        vector[i] = vector[j];
+        vector[j] = aux;
     }
 
 }

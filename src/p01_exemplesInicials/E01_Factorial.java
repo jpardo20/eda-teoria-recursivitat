@@ -3,7 +3,6 @@ package p01_exemplesInicials;
 import eines.Teclat;
 
 public class E01_Factorial {
-
     public static void main (String [] args) {
         int numeroLlegit, factorial;
         System.out.println("\nFactorial");
@@ -18,12 +17,10 @@ public class E01_Factorial {
             System.out.println("\nel factorial de "+numeroLlegit+" és "+factorial);
         }
     }
-
     private static int factorialRec (int n) {
         if (n==0)
             return 1;
         else
             return n * factorialRec(n-1);
     }
-
 }
